@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 function App() {
+  // state는 component 최상단에서 정의해야 하는듯
   const [toDo, setToDo] = useState("");
   const [toDos, setToDos] = useState([]);
   const onChange = (event) => setToDo(event.target.value);
