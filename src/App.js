@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 function App() {
   const [loading, setLoading] = useState(true);
   const [coins, setCoins] = useState([]);
+  // useState 다음에 useEffect 쓰는 게 국룰인듯
   useEffect(() => {
     fetch("https://api.coinpaprika.com/v1/tickers")
       .then((response) => response.json())
