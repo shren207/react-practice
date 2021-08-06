@@ -6,6 +6,7 @@ function App() {
   // useState 다음에 useEffect 쓰는 게 국룰인듯
   useEffect(() => {
     fetch("https://api.coinpaprika.com/v1/tickers")
+      // fetch를 쓰면 무조건 response.join()으로 받아온 데이터를 정제해 주어야 하는 듯
       .then((response) => response.json())
       .then((json) => {
         setCoins(json);
