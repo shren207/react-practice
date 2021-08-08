@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 function App() {
   const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState([]);
+  // async, await 문법으로 재작성 (promise보다 좋은 듯)
   const getMovies = async () => {
     const json = await (
       await fetch(
