@@ -5,8 +5,6 @@ function App() {
   return (
     <Router>
       <Switch>
-        {/* 라우터 작성하는 방법 */}
-        {/* Router랑 Switch 로 감싸줘야 한다 */}
         <Route path="/abot-us">
           <h1>Hello</h1>
         </Route>
